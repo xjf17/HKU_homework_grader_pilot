@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Homework Grading Copilot",
+  "description": "In-page copilot assistant for grading assignments.",
+  "version": "0.1.0",
+  "minimum_chrome_version": "114",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": [
+        "src/promptTemplate.js",
+        "src/pdfParser.js",
+        "src/extractor.js",
+        "src/llmClient.js",
+        "src/ui/overlay.js",
+        "src/contentScript.js"
+      ],
+      "css": ["src/ui/overlay.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Homework Grading Copilot"
+  }
+}

@@ -1,0 +1,151 @@
+#hg-copilot-root.hg-root {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2147483646;
+  width: 360px;
+  font-family: Arial, sans-serif;
+}
+
+#hg-copilot-root .hg-card {
+  border: 1px solid #d0d7de;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  color: #1f2328;
+  max-height: calc(100vh * 2 / 3);
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+#hg-copilot-root .hg-drag-handle {
+  text-align: center;
+  color: #57606a;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 6px;
+  cursor: move;
+  user-select: none;
+}
+
+#hg-copilot-root .hg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#hg-copilot-root .hg-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#hg-copilot-root .hg-status {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #57606a;
+}
+
+#hg-copilot-root .hg-status.hg-error {
+  color: #cf222e;
+}
+
+#hg-copilot-root .hg-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+#hg-copilot-root .hg-btn,
+#hg-copilot-root .hg-small-btn {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #f6f8fa;
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+#hg-copilot-root .hg-btn:hover,
+#hg-copilot-root .hg-small-btn:hover {
+  background: #eef2f6;
+}
+
+#hg-copilot-root .hg-btn-secondary {
+  background: #ffffff;
+}
+
+#hg-copilot-root .hg-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+#hg-copilot-root .hg-label {
+  font-size: 12px;
+  color: #57606a;
+  margin-bottom: 4px;
+}
+
+#hg-copilot-root .hg-input,
+#hg-copilot-root .hg-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+#hg-copilot-root .hg-pill {
+  border-radius: 999px;
+  padding: 2px 8px;
+  border: 1px solid #d0d7de;
+  font-size: 12px;
+  color: #0969da;
+}
+
+#hg-copilot-root .hg-list {
+  margin: 0 0 8px 16px;
+  padding: 0;
+  font-size: 12px;
+}
+
+#hg-copilot-root .hg-list li {
+  margin-bottom: 4px;
+}
+
+#hg-copilot-root .hg-warnings {
+  font-size: 12px;
+  color: #9a6700;
+  margin-bottom: 8px;
+}
+
+#hg-copilot-root .hg-settings {
+  border-top: 1px dashed #d0d7de;
+  padding-top: 8px;
+}
+
+#hg-copilot-root .hg-hidden {
+  display: none;
+}
+
+#hg-copilot-root .hg-setting-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+#hg-copilot-root .hg-setting-inline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
